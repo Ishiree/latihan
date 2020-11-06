@@ -78,6 +78,7 @@
 
 
 .mb-0 > a {
+    content: "\f078";
   display: block;
   position: relative;
 }
@@ -116,13 +117,8 @@
 #nav a.active {
     color:transparent;
 }
-.player {
-  border-radius: 10px;
-  overflow: hidden;
-  ;
-  height: 320px;
-  width: 480px;
-  
+#kolep{
+    background-color:  #f95721;
 }
 
 
@@ -143,7 +139,7 @@
         <div class="row align-items-start mt-3">
             <div class="col"></div>
             <div class="col-8 head">
-                <img src="/Logo_GYD_Png-01.png" alt="Logo GYD" srcset="" class=" rounded logo rounded mx-auto d-block">
+                <img src="Logo_GYD_Png-01.png" alt="Logo GYD" srcset="" class=" rounded logo rounded mx-auto d-block">
                  </div>
             <div class="col"></div>
         </div>
@@ -163,22 +159,12 @@
         <div class="row justify-content-md-center mb-3 mt-3 pr-5 text-center">
             <div class="col-6 text-center player">
 
-                <div class="tgh" style="
-width: 560px;
--webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); /*ios 7 border-radius-bug */
--webkit-transform: rotate(0.000001deg); /*mac os 10.6 safari 5 border-radius-bug */
--webkit-border-radius: 10px; 
--moz-border-radius: 10px;
-border-radius: 10px; 
-overflow: hidden; 
-">
-<p class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/eGo6QPCcG0A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-</div>
+               
                 <!-- <div class="player embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/eGo6QPCcG0A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div> -->
                 <!-- <div class="kontainer"> -->
-                    <!-- <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/HwVPeVTzjvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    <iframe style="border: indigo; border-radius: 20px;" width="560" height="315" src="https://www.youtube.com/embed/HwVPeVTzjvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <!-- </div> -->
             </div>
         </div>
@@ -189,21 +175,21 @@ overflow: hidden;
                    <h2 class="mb-0">
               <a role="button" data-toggle="collapse" href="#zakatViaCrowdfunding" aria-expanded="true" aria-controls="#zakatViaCrowdfunding" style="color: purple !important;" ></a>       
             </h2>
-                <button id="class1"class="btn btn-lg btn-block botton sign-in-facebook border" type="button" data-toggle="collapse" data-target="#zakatViaCrowdfunding" aria-expanded="false" aria-controls="collapseExample">
+                <button id="class1"class="btn btn-lg btn-block botton sign-in-facebook border" type="button" data-toggle="collapse" data-target="#zakatViaCrowdfunding" aria-expanded="true" aria-controls="collapseExample">
                   <strong style="color: purple; padding-right: 17px;">Bayar Zakat via Partner Platform</strong></button>
                   <div class="collapse multi-collapse" id="zakatViaCrowdfunding">
                     <div class="card card-body" id="kartu">
-                      <a href="" class="btn btn-warning btn-block mb-4">
-                          Kitabisa
+                      <a href="" class="btn btn-block mb-4" id="kolep">
+                          <strong style="color: white;">Kitabisa</strong>
                       </a>
-                      <a href="" class="btn btn-warning btn-block mb-4">
-                        Pedulisehat
+                      <a href="" class="btn btn-block mb-4"id="kolep" >
+                        <strong style="color: white;">Pedulisehat</strong>
                     </a>
-                    <a href="" class="btn btn-warning btn-block mb-4">
-                        Amalsholeh
+                    <a href="" class="btn btn-block mb-4"id="kolep">
+                        <strong style="color: white;">E-salaam</strong>
                     </a>
-                    <a href="" class="btn btn-warning btn-block">
-                        E-Salaam
+                    <a href="" class="btn btn-block"id="kolep">
+                        <strong style="color: white;">Amal Sholeh</strong>
                     </a>
                     </div>
                 </div>
@@ -212,25 +198,25 @@ overflow: hidden;
                 <h2 class="mb-0">
                     <a role="button" data-toggle="collapse" href="#Tombol2" aria-expanded="true" aria-controls="#Tombol2" style="color: purple !important;" ></a>       
                   </h2>
-                      <button id="class1"class="btn btn-lg btn-block botton sign-in-facebook border" type="button" data-toggle="collapse" data-target="#Tombol2" aria-expanded="false" aria-controls="collapseExample">
+                      <button id="class1"class="btn btn-lg btn-block botton sign-in-facebook border" type="button" data-toggle="collapse" data-target="#Tombol2" aria-expanded="true" aria-controls="collapseExample">
                         <strong style="color: purple; padding-right: 17px;">Zakat Via Aplikasi</strong></button>
                         <div class="collapse multi-collapse" id="Tombol2">
                           <div class="card card-body" id="kartu">
-                            <a href="" class="btn btn-warning btn-block mb-4">
-                                Lazada
+                            <<a href="" class="btn btn-block mb-4" id="kolep">
+                                <strong style="color: white;">Kitabisa</strong>
                             </a>
-                            <a href="" class="btn btn-warning btn-block mb-4">
-                              Kitabisa
+                            <a href="" class="btn btn-block mb-4"id="kolep" >
+                              <strong style="color: white;">Lazada</strong>
                           </a>
-                          <a href="" class="btn btn-warning btn-block mb-4">
-                              Gojek
+                          <a href="" class="btn btn-block mb-4"id="kolep">
+                              <strong style="color: white;">Gojek</strong>
                           </a>
-                          <a href="" class="btn btn-warning btn-block mb-4">
-                              Shopee
+                          <a href="" class="btn btn-block mb-4"id="kolep">
+                              <strong style="color: white;">Shopee</strong>
                           </a>
-                          <a href="" class="btn btn-warning btn-block">
-                              Jemaah Online System (JOS)
-                          </a>
+                          <a href="" class="btn btn-block"id="kolep">
+                            <strong style="color: white;">Jemaah Online System (JOS)</strong>
+                        </a>
                           </div>
                       </div>
                 </div>
