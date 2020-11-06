@@ -116,6 +116,14 @@
 #nav a.active {
     color:transparent;
 }
+.player {
+  border-radius: 10px;
+  overflow: hidden;
+  ;
+  height: 320px;
+  width: 480px;
+  
+}
 
 
         
@@ -152,10 +160,25 @@
                 </p>
             </div>
         </div>
-        <div class="row justify-content-md-center mb-3 mt-3 pr-5">
-            <div class="col-6 text-center ">
+        <div class="row justify-content-md-center mb-3 mt-3 pr-5 text-center">
+            <div class="col-6 text-center player">
+
+                <div class="tgh" style="
+width: 560px;
+-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); /*ios 7 border-radius-bug */
+-webkit-transform: rotate(0.000001deg); /*mac os 10.6 safari 5 border-radius-bug */
+-webkit-border-radius: 10px; 
+-moz-border-radius: 10px;
+border-radius: 10px; 
+overflow: hidden; 
+">
+<p class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/eGo6QPCcG0A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+                <!-- <div class="player embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eGo6QPCcG0A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> -->
                 <!-- <div class="kontainer"> -->
-                    <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/HwVPeVTzjvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!-- <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/HwVPeVTzjvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 <!-- </div> -->
             </div>
         </div>

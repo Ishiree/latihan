@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion Settle</title>
+  <link rel="stylesheet" href="all.min.css">
+<style>
+  .akordion{
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background: rgba(230, 22, 230, 0.836);
+  }
+
+  .akordion__label,
+  .akordion__konten{
+    padding: 14px 20px;
+  }
+
+  .akordion__label{
+    display: block;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+  }
+
+  .akordion__label:hover{
+    background: purple;
+  }
+
+  .akordion__label::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+  background-size: contain;
+  transition: transform 0.4s;
+}
+
+.akordion__konten {
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+}
+
+.akordion__input {
+  display: none;
+}
+
+.akordion__input:checked ~ .akordion__konten {
+  display: block;
+  visibility: visible;
+}
+
+.akordion__input:checked ~ .akordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
+
+  
+
+</style>
+</head>
+<body>
+  
+  <div class="akordion">
+    <div>
+      <input type="checkbox" name="coba_akordion" id="bagian1" class="akordion__input">
+      <label for="bagian1" class="akordion__label">Akordion1</label>
+      <div class="akordion__konten">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni vitae autem non, id animi dolores necessitatibus tempore enim in, aspernatur esse tempora iure laudantium quo neque rerum nostrum placeat libero.
+        </p>
+      </div>
+    </div>
+    <div>
+      <input type="checkbox" name="coba_akordion" id="bagian2" class="akordion__input">
+      <label for="bagian2" class="akordion__label">Akordion1</label>
+      <div class="akordion__konten">
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptate facilis eos voluptatem quae iure quia officia error temporibus eveniet, dolor, magnam, velit saepe repellendus consectetur possimus molestias. Minima, ducimus!
+        </p>
+      </div>
+    </div>
+    <div>
+      <input type="checkbox" name="coba_akordion" id="bagian3" class="akordion__input">
+      <label for="bagian3" class="akordion__label">Akordion1</label>
+      <div class="akordion__konten">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni vitae autem non, id animi dolores necessitatibus tempore enim in, aspernatur esse tempora iure laudantium quo neque rerum nostrum placeat libero.
+        </p>
+      </div>
+    </div>
+  </div>
+<link rel="stylesheet" href="all.min.js">
+</body>
+</html>
